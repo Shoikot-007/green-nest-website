@@ -1,0 +1,98 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Snake Plant",
+    "category": "Air Purifier",
+    "price": 18,
+    "rating": 4.8,
+    "availableStock": 10,
+    "careLevel": "Easy",
+    "description": "A hardy plant that purifies indoor air and thrives in low light. Perfect for beginners and busy plant parents who want a resilient, low-maintenance green companion.",
+    "image": "snake-plant.jpg",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 2,
+    "plantName": "Monstera Deliciosa",
+    "category": "Tropical",
+    "price": 35,
+    "rating": 4.9,
+    "availableStock": 8,
+    "careLevel": "Moderate",
+    "description": "Also known as the Swiss Cheese Plant, features stunning split leaves that add a tropical touch to any room. A fast-growing statement piece for plant enthusiasts.",
+    "image": "monstera.jpg",
+    "providerName": "Tropical Paradise Co."
+  },
+  {
+    "plantId": 3,
+    "plantName": "Pothos Golden",
+    "category": "Air Purifier",
+    "price": 15,
+    "rating": 4.7,
+    "availableStock": 15,
+    "careLevel": "Easy",
+    "description": "A versatile trailing plant with heart-shaped golden-green leaves. Excellent for hanging baskets and shelves, tolerates various light conditions with ease.",
+    "image": "pothos.jpg",
+    "providerName": "GreenLeaf Gardens"
+  },
+  {
+    "plantId": 4,
+    "plantName": "Peace Lily",
+    "category": "Flowering",
+    "price": 22,
+    "rating": 4.6,
+    "availableStock": 12,
+    "careLevel": "Easy",
+    "description": "Elegant white blooms and glossy green leaves make this a popular choice. Known for its air-purifying qualities and ability to thrive in low light conditions.",
+    "image": "peace-lily.jpg",
+    "providerName": "BloomBox Nursery"
+  },
+  {
+    "plantId": 5,
+    "plantName": "Fiddle Leaf Fig",
+    "category": "Statement Plant",
+    "price": 45,
+    "rating": 4.5,
+    "availableStock": 6,
+    "careLevel": "Challenging",
+    "description": "A stunning tree-like plant with large, violin-shaped leaves. Makes a bold architectural statement in any space but requires consistent care and bright indirect light.",
+    "image": "fiddle-leaf-fig.jpg",
+    "providerName": "Urban Jungle Co."
+  },
+  {
+    "plantId": 6,
+    "plantName": "Spider Plant",
+    "category": "Air Purifier",
+    "price": 12,
+    "rating": 4.8,
+    "availableStock": 20,
+    "careLevel": "Easy",
+    "description": "Fast-growing plant with arching leaves and baby plantlets. One of the easiest houseplants to grow and propagate, perfect for beginners and plant lovers alike.",
+    "image": "spider-plant.jpg",
+    "providerName": "EcoPlant Hub"
+  },
+  {
+    "plantId": 7,
+    "plantName": "Rubber Plant",
+    "category": "Statement Plant",
+    "price": 28,
+    "rating": 4.7,
+    "availableStock": 9,
+    "careLevel": "Moderate",
+    "description": "Features large, glossy burgundy leaves that add drama to any room. A low-maintenance plant that grows tall and makes an impressive focal point in home decor.",
+    "image": "rubber-plant.jpg",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 8,
+    "plantName": "Aloe Vera",
+    "category": "Succulent",
+    "price": 16,
+    "rating": 4.9,
+    "availableStock": 18,
+    "careLevel": "Easy",
+    "description": "A medicinal succulent with thick, gel-filled leaves known for healing properties. Requires minimal watering and thrives in bright light, perfect for sunny windowsills.",
+    "image": "aloe-vera.jpg",
+    "providerName": "Desert Oasis Plants"
+  }
+]
