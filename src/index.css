@@ -1,0 +1,44 @@
+@import "tailwindcss"; 
+@plugin "daisyui";
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f8faf8;
+    }
+
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #52b788;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #2d6a4f;
+    }
+}
+
+
+@layer utilities {
+    .transition-all {
+        transition: all 0.3s ease;
+    }
+
+    .hero-gradient {
+        background: linear-gradient(135deg, #2d6a4f 0%, #52b788 100%);
+    }
+}
