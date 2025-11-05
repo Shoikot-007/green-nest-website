@@ -2,10 +2,11 @@ import { createBrowserRouter } from "react-router";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
 import Plants from "../pages/Plants";
+import PlantDetails from "../pages/PlantDetails";
 import Login from "../pages/Login";
 import Signup from "../pages/Signup";
+import MyProfile from "../pages/MyProfile";
 import PrivateRoute from "./PrivateRoute";
-import PlantDetails from "../pages/PlantDetails";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,14 @@ const router = createBrowserRouter([
         path: "/signup",
         element: <Signup />,
       },
+      {
+        path: '/profile',
+        element: (
+          <PrivateRoute>
+            <MyProfile />
+          </PrivateRoute>
+        )
+      }
     ],
   },
 ]);
