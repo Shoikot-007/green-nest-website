@@ -23,7 +23,7 @@ const Navbar = () => {
         <NavLink 
           to="/" 
           className={({ isActive }) => 
-            isActive ? 'text-primary font-bold' : 'hover:text-primary'
+            isActive ? 'text-primary font-semibold' : 'text-charcoal hover:text-primary'
           }
         >
           Home
@@ -33,7 +33,7 @@ const Navbar = () => {
         <NavLink 
           to="/plants" 
           className={({ isActive }) => 
-            isActive ? 'text-primary font-bold' : 'hover:text-primary'
+            isActive ? 'text-primary font-semibold' : 'text-charcoal hover:text-primary'
           }
         >
           Plants
@@ -44,7 +44,7 @@ const Navbar = () => {
           <NavLink 
             to="/profile" 
             className={({ isActive }) => 
-              isActive ? 'text-primary font-bold' : 'hover:text-primary'
+              isActive ? 'text-primary font-semibold' : 'text-charcoal hover:text-primary'
             }
           >
             My Profile
@@ -55,7 +55,7 @@ const Navbar = () => {
   )
 
   return (
-    <nav className="navbar bg-white shadow-md px-4 lg:px-20 py-4 sticky top-0 z-50">
+    <nav className="navbar bg-white shadow-soft px-4 lg:px-20 py-4 sticky top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -63,18 +63,18 @@ const Navbar = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
           </label>
-          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-1 p-2 shadow bg-base-100 rounded-box w-52">
+          <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-1 p-2 shadow-soft bg-white rounded-card w-52">
             {navLinks}
           </ul>
         </div>
-        <Link to="/" className="flex items-center gap-2 text-2xl font-bold text-primary">
+        <Link to="/" className="flex items-center gap-2 text-2xl font-bold text-primary font-heading">
           <FaLeaf className="text-secondary" />
           <span>GreenNest</span>
         </Link>
       </div>
       
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 gap-2">
+        <ul className="menu menu-horizontal px-1 gap-2 font-body">
           {navLinks}
         </ul>
       </div>
@@ -83,7 +83,7 @@ const Navbar = () => {
         {user ? (
           <div className="dropdown dropdown-end">
             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-              <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+              <div className="w-10 rounded-full ring ring-secondary ring-offset-base-100 ring-offset-2">
                 {user.photoURL ? (
                   <img src={user.photoURL} alt={user.displayName} />
                 ) : (
@@ -93,20 +93,20 @@ const Navbar = () => {
                 )}
               </div>
             </label>
-            <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+            <ul tabIndex={0} className="mt-3 z-1 p-2 shadow-soft menu menu-sm dropdown-content bg-white rounded-card w-52">
               <li className="menu-title">
-                <span>{user.displayName || 'User'}</span>
+                <span className="text-charcoal font-body">{user.displayName || 'User'}</span>
               </li>
-              <li><Link to="/profile">My Profile</Link></li>
-              <li><button onClick={handleLogout}>Logout</button></li>
+              <li><Link to="/profile" className="text-charcoal hover:text-primary">My Profile</Link></li>
+              <li><button onClick={handleLogout} className="text-charcoal hover:text-primary">Logout</button></li>
             </ul>
           </div>
         ) : (
           <>
-            <Link to="/login" className="btn btn-outline btn-primary btn-sm">
+            <Link to="/login" className="btn btn-outline btn-primary btn-sm rounded-card">
               Login
             </Link>
-            <Link to="/signup" className="btn btn-primary btn-sm text-white">
+            <Link to="/signup" className="btn btn-primary btn-sm text-white rounded-card">
               Register
             </Link>
           </>

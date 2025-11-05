@@ -1,44 +1,66 @@
-@import "tailwindcss"; 
+@import "tailwindcss";
 @plugin "daisyui";
-
 @layer base {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #f8faf8;
-    }
-
-
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-
-    ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-    }
-
-    ::-webkit-scrollbar-thumb {
-        background: #52b788;
-        border-radius: 5px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-        background: #2d6a4f;
-    }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f8f4;
+    color: #2b2b2b;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Poppins", sans-serif;
+    color: #3a7d44;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f9f8f4;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #6fbf73;
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3a7d44;
+  }
 }
-
-
 @layer utilities {
-    .transition-all {
-        transition: all 0.3s ease;
-    }
-
-    .hero-gradient {
-        background: linear-gradient(135deg, #2d6a4f 0%, #52b788 100%);
-    }
+  .transition-all {
+    transition: all 0.3s ease;
+  }
+  .hero-gradient {
+    background: linear-gradient(135deg, #3a7d44 0%, #6fbf73 100%);
+  }
+  .card {
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  .btn-primary {
+    background-color: #3a7d44;
+    color: white;
+    border: none;
+  }
+  .btn-primary:hover {
+    background-color: #6fbf73;
+  }
+  .btn-outline {
+    border-color: #3a7d44;
+    color: #3a7d44;
+    background-color: transparent;
+  }
+  .btn-outline:hover {
+    background-color: #ddeedf;
+    border-color: #3a7d44;
+    color: #3a7d44;
+  }
 }

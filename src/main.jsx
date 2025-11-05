@@ -15,21 +15,25 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         toastOptions={{
           duration: 3000,
           style: {
-            background: '#2d6a4f',
+            background: '#3A7D44',
             color: '#fff',
+            fontFamily: 'Inter, sans-serif',
           },
           success: {
             duration: 3000,
             iconTheme: {
-              primary: '#52b788',
+              primary: '#6FBF73',
               secondary: '#fff',
             },
           },
           error: {
             duration: 4000,
+            style: {
+              background: '#C47E5A',
+            },
             iconTheme: {
-              primary: '#ef4444',
-              secondary: '#fff',
+              primary: '#fff',
+              secondary: '#C47E5A',
             },
           },
         }}
