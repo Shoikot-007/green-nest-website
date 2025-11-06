@@ -1,16 +1,36 @@
-# React + Vite
+# 🌱 GreenNest - Indoor Plant Care & Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GreenNest is a modern, responsive web application designed for plant enthusiasts who want to nurture and decorate their homes with healthy indoor plants. The platform allows users to explore a curated collection of plants, learn about plant care, and book expert consultations for personalized guidance.
 
-Currently, two official plugins are available:
+## 🌿 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[View Live Site](#)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **🏠 Beautiful Homepage** with dynamic hero slider showcasing plant care and collections
+- **🌸 Plant Collection** with 12+ indoor plants across multiple categories
+- **🔍 Smart Filtering** to browse plants by category (Air Purifier, Tropical, Succulent, etc.)
+- **📝 Detailed Plant Pages** with care tips, pricing, and stock information
+- **👤 User Authentication** with email/password and Google Sign-In
+- **🔐 Protected Routes** for accessing plant details and profile management
+- **💼 Expert Consultation Booking** to get personalized plant care advice
+- **📱 Fully Responsive Design** optimized for mobile, tablet, and desktop
+- **🎨 Modern UI/UX** with a calming green color palette and smooth animations
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Frontend
+- **React** - JavaScript library for building user interfaces
+- **React Router** - Declarative routing for React applications
+- **Tailwind CSS** - Utility-first CSS framework
+- **DaisyUI** - Component library for Tailwind CSS
+- **Swiper.js** - Modern slider/carousel library for hero section
+- **React Icons** - Popular icon library
+- **React Hot Toast** - Beautiful toast notifications
+
+### Backend & Authentication
+- **Firebase** - Authentication and backend services
+  - Email/Password Authentication
+  - Google OAuth Sign-In
+  - User Profile Management

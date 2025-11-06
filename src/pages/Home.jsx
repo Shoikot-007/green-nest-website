@@ -46,9 +46,33 @@ const Home = () => {
     { name: "Michael Park", specialization: "Plant Health Consultant", image: "expert4.jpg" }
   ]
 
+  const slides = [
+    {
+      image: 'hero1.jpg',
+      icon: <FaLeaf className="text-7xl mx-auto mb-6 text-white" />,
+      title: 'Welcome to GreenNest',
+      text: 'Transform your home into a lush paradise with our premium indoor plants and expert care guidance',
+      btnText: 'Explore Plants'
+    },
+    {
+      image: 'hero2.jpg',
+      icon: <FaSeedling className="text-7xl mx-auto mb-6 text-white" />,
+      title: 'Grow with Confidence',
+      text: 'Get personalized care tips and consultations from our certified plant experts',
+      btnText: 'Book Consultation'
+    },
+    {
+      image: 'hero3.jpg',
+      icon: <FaWater className="text-7xl mx-auto mb-6 text-white" />,
+      title: 'Easy Plant Care',
+      text: 'Discover low-maintenance plants perfect for beginners and busy lifestyles',
+      btnText: 'Shop Now'
+    }
+  ]
+
   return (
     <div className="bg-[#F9F8F4]">
-      <section className="bg-linear-to-br from-[#3A7D44] to-[#6FBF73] text-white">
+      <section>
         <Swiper
           spaceBetween={0}
           centeredSlides={true}
@@ -58,74 +82,39 @@ const Home = () => {
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide>
-            <div className="hero min-h-[500px]">
-              <div className="hero-content text-center">
-                <div className="max-w-2xl py-12">
-                  <FaLeaf className="text-7xl mx-auto mb-6 text-[#DDEEDF]" />
-                  <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                    Welcome to GreenNest
-                  </h1>
-                  <p className="text-xl mb-8 text-[#DDEEDF]" style={{ fontFamily: 'Inter, sans-serif' }}>
-                    Transform your home into a lush paradise with our premium indoor plants and expert care guidance
-                  </p>
-                  <Link 
-                    to="/plants" 
-                    className="btn bg-[#DDEEDF] text-[#3A7D44] border-none hover:bg-white rounded-2xl btn-lg"
-                    style={{ fontFamily: 'Inter, sans-serif' }}
-                  >
-                    Explore Plants
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <div
+                className="hero min-h-[500px] relative"
+                style={{
+                  backgroundImage: `url(${slide.image})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center',
+                }}
+              >
+                <div className="absolute inset-0 bg-[#3A7D44]/70"></div>
 
-          <SwiperSlide>
-            <div className="hero min-h-[500px] bg-linear-to-r from-[#6FBF73] to-[#3A7D44]">
-              <div className="hero-content text-center">
-                <div className="max-w-2xl py-12">
-                  <FaSeedling className="text-7xl mx-auto mb-6 text-[#DDEEDF]" />
-                  <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                    Grow with Confidence
-                  </h1>
-                  <p className="text-xl mb-8 text-[#DDEEDF]" style={{ fontFamily: 'Inter, sans-serif' }}>
-                    Get personalized care tips and consultations from our certified plant experts
-                  </p>
-                  <Link 
-                    to="/plants" 
-                    className="btn bg-[#DDEEDF] text-[#3A7D44] border-none hover:bg-white rounded-2xl btn-lg"
-                    style={{ fontFamily: 'Inter, sans-serif' }}
-                  >
-                    Book Consultation
-                  </Link>
+                <div className="hero-content text-center relative z-10">
+                  <div className="max-w-2xl py-12">
+                    {slide.icon}
+                    <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white" style={{ fontFamily: 'Poppins, sans-serif' }}>
+                      {slide.title}
+                    </h1>
+                    <p className="text-xl mb-8 text-white" style={{ fontFamily: 'Inter, sans-serif' }}>
+                      {slide.text}
+                    </p>
+                    <Link
+                      to="/plants"
+                      className="btn bg-white text-[#3A7D44] border-none hover:bg-[#DDEEDF] rounded-2xl btn-lg"
+                      style={{ fontFamily: 'Inter, sans-serif' }}
+                    >
+                      {slide.btnText}
+                    </Link>
+                  </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="hero min-h-[500px] bg-linear-to-br from-[#3A7D44] via-[#6FBF73] to-[#DDEEDF]">
-              <div className="hero-content text-center">
-                <div className="max-w-2xl py-12">
-                  <FaWater className="text-7xl mx-auto mb-6 text-white" />
-                  <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>
-                    Easy Plant Care
-                  </h1>
-                  <p className="text-xl mb-8 text-white" style={{ fontFamily: 'Inter, sans-serif' }}>
-                    Discover low-maintenance plants perfect for beginners and busy lifestyles
-                  </p>
-                  <Link 
-                    to="/plants" 
-                    className="btn bg-[#DDEEDF] text-[#3A7D44] border-none hover:bg-white rounded-2xl btn-lg"
-                    style={{ fontFamily: 'Inter, sans-serif' }}
-                  >
-                    Shop Now
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </SwiperSlide>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </section>
 
@@ -142,9 +131,9 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {topRatedPlants.map(plant => (
             <div key={plant.plantId} className="card bg-white shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.1)] transition-all duration-300 rounded-2xl">
-              <figure className="h-64 overflow-hidden rounded-t-2xl">
-                <img 
-                  src={plant.image} 
+              <figure className="h-72 overflow-hidden rounded-t-2xl">
+                <img
+                  src={plant.image}
                   alt={plant.plantName}
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                 />
@@ -155,7 +144,7 @@ const Home = () => {
                   <div className="badge bg-[#6FBF73] text-white border-none">{plant.category}</div>
                 </h3>
                 <p className="text-[#2B2B2B]" style={{ fontFamily: 'Inter, sans-serif' }}>{plant.description.slice(0, 80)}...</p>
-                
+
                 <div className="flex justify-between items-center mt-4">
                   <div className="flex items-center gap-1">
                     <FaStar className="text-[#D4AF37]" />
@@ -165,8 +154,8 @@ const Home = () => {
                 </div>
 
                 <div className="card-actions justify-end mt-4">
-                  <Link 
-                    to={`/plant/${plant.plantId}`} 
+                  <Link
+                    to={`/plant/${plant.plantId}`}
                     className="btn bg-[#3A7D44] text-white border-none hover:bg-[#6FBF73] rounded-2xl btn-block"
                     style={{ fontFamily: 'Inter, sans-serif' }}
                   >
@@ -219,7 +208,7 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {experts.map((expert, index) => (
             <div key={index} className="card bg-white shadow-[0_4px_12px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.1)] transition-all duration-300 rounded-2xl">
-              <figure className="h-64 bg-linear-to-br from-[#3A7D44] to-[#6FBF73] rounded-t-2xl">
+              <figure className="h-90 bg-linear-to-br from-[#3A7D44] to-[#6FBF73] rounded-t-2xl">
                 <img src={expert.image} alt={expert.name} className="w-full h-full object-cover" />
               </figure>
               <div className="card-body text-center">
@@ -242,7 +231,7 @@ const Home = () => {
               </div>
               <div className="lg:w-1/2">
                 <div className="badge bg-[#DDEEDF] text-[#3A7D44] border-none badge-lg mb-4">Plant of the Week</div>
-                <h2 className="text-4xl md:text-5xl font-bold mb-6" style={{ fontFamily: 'Poppins, sans-serif' }}>Monstera Deliciosa</h2>
+                <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white" style={{ fontFamily: 'Poppins, sans-serif' }}>Monstera Deliciosa</h2>
                 <p className="text-xl mb-4 text-[#DDEEDF]" style={{ fontFamily: 'Inter, sans-serif' }}>
                   Also known as the Swiss Cheese Plant, this stunning tropical beauty features 
                   large, glossy leaves with natural holes that develop as the plant matures.
@@ -256,8 +245,8 @@ const Home = () => {
                   <div className="badge badge-lg border-[#DDEEDF] text-[#DDEEDF] bg-transparent">Air Purifier</div>
                   <div className="badge badge-lg border-[#DDEEDF] text-[#DDEEDF] bg-transparent">Pet-Friendly</div>
                 </div>
-                <Link 
-                  to="/plants" 
+                <Link
+                  to="/plants"
                   className="btn bg-[#DDEEDF] text-[#3A7D44] border-none hover:bg-white rounded-2xl btn-lg"
                   style={{ fontFamily: 'Inter, sans-serif' }}
                 >

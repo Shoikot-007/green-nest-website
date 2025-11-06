@@ -31,7 +31,7 @@ const Plants = () => {
   }
 
   return (
-    <div className="bg-[#F9F8F4] min-h-screen">
+    <div className="bg-[#DDEEDF] min-h-screen">
       <div className="container mx-auto px-4 lg:px-20 py-16">
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold text-[#3A7D44] mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>

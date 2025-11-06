@@ -67,7 +67,7 @@ const Navbar = () => {
     <nav className="navbar bg-white shadow-[0_4px_12px_rgba(0,0,0,0.05)] px-4 lg:px-20 py-4 sticky top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
-          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden pl-0">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"

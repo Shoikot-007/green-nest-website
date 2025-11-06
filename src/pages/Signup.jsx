@@ -36,7 +36,6 @@ const Signup = () => {
     const photoURL = form.photoURL.value;
     const password = form.password.value;
 
-    // Validate password
     const error = validatePassword(password);
     if (error) {
       setPasswordError(error);
@@ -88,7 +87,7 @@ const Signup = () => {
           <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
             <FaLeaf className="text-6xl" />
             <h1
-              className="text-5xl font-bold"
+              className="text-5xl font-bold text-white"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
               GreenNest
@@ -121,7 +120,7 @@ const Signup = () => {
 
             <form onSubmit={handleSignup}>
               <div className="form-control mb-4">
-                <label className="label">
+                <label className="label mb-2">
                   <span
                     className="label-text font-semibold text-[#2B2B2B]"
                     style={{ fontFamily: "Inter, sans-serif" }}
@@ -133,14 +132,14 @@ const Signup = () => {
                   type="text"
                   name="name"
                   placeholder="Enter your full name"
-                  className="input input-bordered border-[#3A7D44] focus:border-[#6FBF73] focus:outline-none rounded-lg"
+                  className="input input-bordered border-[#3A7D44] focus:border-[#6FBF73] focus:outline-none rounded-lg w-full"
                   style={{ fontFamily: "Inter, sans-serif" }}
                   required
                 />
               </div>
 
               <div className="form-control mb-4">
-                <label className="label">
+                <label className="label mb-2">
                   <span
                     className="label-text font-semibold text-[#2B2B2B]"
                     style={{ fontFamily: "Inter, sans-serif" }}
@@ -152,14 +151,14 @@ const Signup = () => {
                   type="email"
                   name="email"
                   placeholder="Enter your email"
-                  className="input input-bordered border-[#3A7D44] focus:border-[#6FBF73] focus:outline-none rounded-lg"
+                  className="input input-bordered border-[#3A7D44] focus:border-[#6FBF73] focus:outline-none rounded-lg w-full"
                   style={{ fontFamily: "Inter, sans-serif" }}
                   required
                 />
               </div>
 
               <div className="form-control mb-4">
-                <label className="label">
+                <label className="label mb-2">
                   <span
                     className="label-text font-semibold text-[#2B2B2B]"
                     style={{ fontFamily: "Inter, sans-serif" }}
@@ -171,14 +170,14 @@ const Signup = () => {
                   type="url"
                   name="photoURL"
                   placeholder="Enter your photo URL"
-                  className="input input-bordered border-[#3A7D44] focus:border-[#6FBF73] focus:outline-none rounded-lg"
+                  className="input input-bordered border-[#3A7D44] focus:border-[#6FBF73] focus:outline-none rounded-lg w-full"
                   style={{ fontFamily: "Inter, sans-serif" }}
                   required
                 />
               </div>
 
               <div className="form-control mb-2">
-                <label className="label">
+                <label className="label mb-2">
                   <span
                     className="label-text font-semibold text-[#2B2B2B]"
                     style={{ fontFamily: "Inter, sans-serif" }}
@@ -208,7 +207,7 @@ const Signup = () => {
                   </button>
                 </div>
                 {passwordError && (
-                  <label className="label">
+                  <label className="label mt-2">
                     <span
                       className="label-text-alt text-[#C47E5A]"
                       style={{ fontFamily: "Inter, sans-serif" }}
@@ -217,21 +216,12 @@ const Signup = () => {
                     </span>
                   </label>
                 )}
-                <label className="label">
-                  <span
-                    className="label-text-alt text-[#2B2B2B]"
-                    style={{ fontFamily: "Inter, sans-serif" }}
-                  >
-                    Password must contain uppercase, lowercase, and be at least
-                    6 characters
-                  </span>
-                </label>
               </div>
 
               <div className="form-control mt-6">
                 <button
                   type="submit"
-                  className="btn bg-[#3A7D44] text-white border-none hover:bg-[#6FBF73] rounded-lg transition-all duration-300"
+                  className="btn bg-[#3A7D44] text-white border-none hover:bg-[#6FBF73] rounded-lg transition-all duration-300 w-full"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Register

@@ -40,7 +40,7 @@ const MyProfile = () => {
   };
 
   return (
-    <div className="bg-[#F9F8F4] min-h-screen">
+    <div className="bg-[#DDEEDF] min-h-screen">
       <div className="container mx-auto px-4 lg:px-20 py-16">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-8">
@@ -82,7 +82,7 @@ const MyProfile = () => {
               {!isEditing ? (
                 <div className="space-y-6">
                   <div className="form-control">
-                    <label className="label">
+                    <label className="label mb-2">
                       <span
                         className="label-text font-semibold flex items-center gap-2 text-[#2B2B2B]"
                         style={{ fontFamily: "Inter, sans-serif" }}
@@ -102,7 +102,7 @@ const MyProfile = () => {
                   </div>
 
                   <div className="form-control">
-                    <label className="label">
+                    <label className="label mb-2">
                       <span
                         className="label-text font-semibold flex items-center gap-2 text-[#2B2B2B]"
                         style={{ fontFamily: "Inter, sans-serif" }}
@@ -122,7 +122,7 @@ const MyProfile = () => {
                   </div>
 
                   <div className="form-control">
-                    <label className="label">
+                    <label className="label mb-2">
                       <span
                         className="label-text font-semibold flex items-center gap-2 text-[#2B2B2B]"
                         style={{ fontFamily: "Inter, sans-serif" }}
@@ -155,7 +155,7 @@ const MyProfile = () => {
               ) : (
                 <form onSubmit={handleUpdateProfile} className="space-y-6">
                   <div className="form-control">
-                    <label className="label">
+                    <label className="label mb-2">
                       <span
                         className="label-text font-semibold flex items-center gap-2 text-[#2B2B2B]"
                         style={{ fontFamily: "Inter, sans-serif" }}
@@ -170,14 +170,14 @@ const MyProfile = () => {
                       value={formData.displayName}
                       onChange={handleInputChange}
                       placeholder="Enter your name"
-                      className="input input-bordered border-[#3A7D44] focus:border-[#6FBF73] focus:outline-none rounded-lg"
+                      className="input input-bordered border-[#3A7D44] focus:border-[#6FBF73] focus:outline-none rounded-lg w-full"
                       style={{ fontFamily: "Inter, sans-serif" }}
                       required
                     />
                   </div>
 
                   <div className="form-control">
-                    <label className="label">
+                    <label className="label mb-2">
                       <span
                         className="label-text font-semibold flex items-center gap-2 text-[#2B2B2B]"
                         style={{ fontFamily: "Inter, sans-serif" }}
@@ -189,13 +189,13 @@ const MyProfile = () => {
                     <input
                       type="email"
                       value={user?.email}
-                      className="input input-bordered bg-[#DDEEDF] bg-opacity-30 rounded-lg"
+                      className="input input-bordered bg-[#DDEEDF] bg-opacity-30 rounded-lg w-full"
                       style={{ fontFamily: "Inter, sans-serif" }}
                       disabled
                     />
                     <label className="label">
                       <span
-                        className="label-text-alt text-[#2B2B2B]"
+                        className="label-text-alt text-[#2B2B2B] mt-2"
                         style={{ fontFamily: "Inter, sans-serif" }}
                       >
                         Email cannot be changed
@@ -204,7 +204,7 @@ const MyProfile = () => {
                   </div>
 
                   <div className="form-control">
-                    <label className="label">
+                    <label className="label mb-2">
                       <span
                         className="label-text font-semibold flex items-center gap-2 text-[#2B2B2B]"
                         style={{ fontFamily: "Inter, sans-serif" }}
@@ -219,7 +219,7 @@ const MyProfile = () => {
                       value={formData.photoURL}
                       onChange={handleInputChange}
                       placeholder="Enter photo URL"
-                      className="input input-bordered border-[#3A7D44] focus:border-[#6FBF73] focus:outline-none rounded-lg"
+                      className="input input-bordered border-[#3A7D44] focus:border-[#6FBF73] focus:outline-none rounded-lg w-full"
                       style={{ fontFamily: "Inter, sans-serif" }}
                       required
                     />

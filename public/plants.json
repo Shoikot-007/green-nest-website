@@ -94,5 +94,53 @@
     "description": "A medicinal succulent with thick, gel-filled leaves known for healing properties. Requires minimal watering and thrives in bright light, perfect for sunny windowsills.",
     "image": "/aloe-vera.jpg",
     "providerName": "Desert Oasis Plants"
+  },
+  {
+    "plantId": 9,
+    "plantName": "ZZ Plant",
+    "category": "Air Purifier",
+    "price": 24,
+    "rating": 4.8,
+    "availableStock": 14,
+    "careLevel": "Easy",
+    "description": "Nearly indestructible plant with glossy, dark green leaves. Tolerates neglect, low light, and irregular watering, making it perfect for offices and busy homes.",
+    "image": "/zz-plant.jpg",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 10,
+    "plantName": "Bird of Paradise",
+    "category": "Tropical",
+    "price": 55,
+    "rating": 4.6,
+    "availableStock": 5,
+    "careLevel": "Moderate",
+    "description": "Dramatic tropical plant with large banana-like leaves. Creates a stunning focal point and brings a tropical paradise vibe to any bright, spacious room.",
+    "image": "/bird-of-paradise.jpg",
+    "providerName": "Tropical Paradise Co."
+  },
+  {
+    "plantId": 11,
+    "plantName": "Philodendron Brasil",
+    "category": "Tropical",
+    "price": 19,
+    "rating": 4.7,
+    "availableStock": 16,
+    "careLevel": "Easy",
+    "description": "Vibrant trailing plant with heart-shaped leaves featuring yellow and lime variegation. Fast-growing and forgiving, perfect for beginners seeking colorful foliage.",
+    "image": "/philodendron-brasil.jpg",
+    "providerName": "GreenLeaf Gardens"
+  },
+  {
+    "plantId": 12,
+    "plantName": "Jade Plant",
+    "category": "Succulent",
+    "price": 20,
+    "rating": 4.5,
+    "availableStock": 11,
+    "careLevel": "Easy",
+    "description": "Classic succulent with thick, rounded leaves and tree-like growth. Symbol of good luck and prosperity, requires minimal care and can live for decades.",
+    "image": "/jade-plant.jpg",
+    "providerName": "Desert Oasis Plants"
   }
 ]

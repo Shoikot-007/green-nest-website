@@ -78,7 +78,7 @@ const Login = () => {
           <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
             <FaLeaf className="text-6xl" />
             <h1
-              className="text-5xl font-bold"
+              className="text-5xl font-bold text-white"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
               GreenNest
@@ -110,7 +110,7 @@ const Login = () => {
 
             <form onSubmit={handleLogin}>
               <div className="form-control mb-4">
-                <label className="label">
+                <label className="label mb-2">
                   <span
                     className="label-text font-semibold text-[#2B2B2B]"
                     style={{ fontFamily: "Inter, sans-serif" }}
@@ -124,14 +124,14 @@ const Login = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
-                  className="input input-bordered border-[#3A7D44] focus:border-[#6FBF73] focus:outline-none rounded-lg"
+                  className="input input-bordered border-[#3A7D44] focus:border-[#6FBF73] focus:outline-none rounded-lg w-full"
                   style={{ fontFamily: "Inter, sans-serif" }}
                   required
                 />
               </div>
 
               <div className="form-control mb-2">
-                <label className="label">
+                <label className="label mb-2">
                   <span
                     className="label-text font-semibold text-[#2B2B2B]"
                     style={{ fontFamily: "Inter, sans-serif" }}
@@ -162,7 +162,7 @@ const Login = () => {
                 </div>
               </div>
 
-              <div className="flex justify-end mb-6">
+              <div className="flex justify-end mb-3">
                 <button
                   type="button"
                   onClick={handleForgotPassword}
@@ -176,7 +176,7 @@ const Login = () => {
               <div className="form-control">
                 <button
                   type="submit"
-                  className="btn bg-[#3A7D44] text-white border-none hover:bg-[#6FBF73] rounded-lg transition-all duration-300"
+                  className="btn bg-[#3A7D44] text-white border-none hover:bg-[#6FBF73] rounded-lg transition-all duration-300 w-full"
                   style={{ fontFamily: "Inter, sans-serif" }}
                 >
                   Login
