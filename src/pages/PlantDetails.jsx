@@ -67,7 +67,7 @@ const PlantDetails = () => {
   }
 
   return (
-    <div className="bg-[#F9F8F4] min-h-screen">
+    <div className="bg-[#DDEEDF] min-h-screen">
       <div className="container mx-auto px-4 lg:px-20 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div className="flex justify-center items-center">
@@ -173,7 +173,7 @@ const PlantDetails = () => {
               </span>
             </div>
 
-            <div className="bg-[#DDEEDF] bg-opacity-40 p-6 rounded-2xl">
+            <div className="bg-[#FFFFFF] bg-opacity-40 p-6 rounded-2xl">
               <h3
                 className="text-xl font-semibold text-[#3A7D44] mb-3 flex items-center gap-2"
                 style={{ fontFamily: "Poppins, sans-serif" }}

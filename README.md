@@ -4,7 +4,7 @@ GreenNest is a modern, responsive web application designed for plant enthusiasts
 
 ## 🌿 Live Demo
 
-[View Live Site](#)
+[View Live Site](#https://greennest-722.netlify.app)
 
 ## ✨ Features
 
